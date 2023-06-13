@@ -14,15 +14,15 @@ public enum Animals {
     SNAKE(12),
     BEAR(20);
 
-    private int ageAnimal;
+    private final int ageAnimal;
 
-    Animals(int ageAnimal) {
+    private Animals(int ageAnimal) {
         this.ageAnimal = ageAnimal;
     }
 
     @Override
     public String toString() {
-        return "Animal{" + super.toString() + ", " +
+        return "Animal{" + name() + ", " +
                 "age=" + ageAnimal +
                 '}';
     }
